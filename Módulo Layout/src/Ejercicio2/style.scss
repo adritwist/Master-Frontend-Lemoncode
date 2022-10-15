@@ -1,0 +1,93 @@
+@use "base1";
+@use "base2";
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: blue;
+}
+
+h3 {
+    width: 150px;
+    color: black;
+}
+
+p {
+    color: black;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: white;
+}
+
+.temaA, .temaB {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    text-align: center;
+    gap: 5px;
+}
+
+div > span {
+    border: 1px solid black;
+    height: 50px;
+}
+
+.temaA > span:nth-child(2) {
+    background-color: base1.$base;
+}
+
+.temaA > span:nth-child(3) {
+    background-color: base1.$important;
+}
+
+.temaA > span:nth-child(4) {
+    background-color: base1.$warning;
+}
+
+.temaA > p:first-of-type {
+    font-family: base1.$fontPrin;
+} 
+
+.temaA > p:nth-last-of-type(1) {
+    font-family: base1.$fontSec;
+    font-size: base1.$fontSizeSec;
+} 
+
+.temaA > span:nth-last-child(1) {
+    box-shadow: base1.$shadow;
+    color: black;
+}
+
+.temaB > span:nth-child(2) {
+    background-color: base2.$base;
+}
+
+.temaB > span:nth-child(3) {
+    background-color: base2.$important;
+}
+
+.temaB > span:nth-child(4) {
+    background-color: base2.$warning;
+}
+
+.temaB > p:first-of-type {
+    font-family: base2.$fontPrin;
+} 
+
+.temaB > p:nth-last-of-type(1) {
+    font-family: base2.$fontSec;
+    font-size: base2.$fontSizeSec;
+} 
+
+.temaB > span:nth-last-child(1) {
+    box-shadow: base2.$shadow;
+    color: black;
+}
