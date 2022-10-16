@@ -1,0 +1,161 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(238, 237, 237);
+}
+
+.toolbar {
+    padding: 20px 0 10px 0;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.page-title {
+    display: flex;
+    background-color: darkorange;
+    height: 50px;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.page-container {
+    display: flex;
+}
+
+.menu-container {
+    width: 100px;
+    background-color: darksalmon;
+    height: 95vh;
+    position: sticky;
+    top: 0;
+}
+
+.menu-title {
+    display: flex;
+    justify-content: center;
+    color: white;  
+    padding-top: 10px;
+}
+
+.nav2 {
+    display: none;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: whitesmoke;
+    list-style-type: none;
+    height: 30%;
+    align-items: center;
+    color: black;
+    padding-inline: 0px;
+}
+
+li {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+}
+
+li:hover {
+    display: flex;
+    background-color: orange;
+}
+
+.list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    row-gap: 50px;
+    padding: 20px 0 10px 0;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    width: 300px;
+    height: 300px;
+    padding: 15px 10px 15px 10px;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+img {
+    border-radius: 100px;
+    height: 200px;
+    width: 200px;
+}
+
+footer {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    color: white;
+    background-color: orange;
+}
+
+@media screen and (max-width: 768px) {
+
+    .page-container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        margin-top: 0;
+        height: 50px;
+        background-color: salmon;
+        box-sizing: border-box;
+    }
+
+     
+    li {
+        display: flex;
+        background-color: whitesmoke;
+        border: 1px solid black;
+    }
+   .menu-title, input, input + div, .toolbar {
+        display: none;
+    }
+
+    .nav1 {
+        display: none;
+    }
+
+    .nav2 {
+        display: block;
+        width: 100%;   
+    }
+
+
+    .list {
+        display: flex;
+        row-gap: 5px;
+        padding-top: 60px;
+        width: 100vw;
+        
+    }
+
+    .card {
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        justify-content: space-around;
+    }
+    
+}
