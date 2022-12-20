@@ -1,0 +1,19 @@
+$background-color: yellow;
+$font-color: red;
+$alineacion: center;
+
+h3 {
+    background-color: $background-color;
+    color: $font-color;
+    text-align: $alineacion;
+}
+
+#imagen {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    width: 500px;
+    height: 500px;
+}
